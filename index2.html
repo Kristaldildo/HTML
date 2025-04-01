@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Increment Number</title>
+    <style>
+        /* Добавьте стили по вашему усмотрению */
+    </style>
+</head>
+<body>
+    <h1>Qwerty</h1>
+    <div id="counter">1</div>
+    <img src="https://avatars.mds.yandex.net/i?id=f50af55a565357c56455f2fddb178d9b43935b26-5232815-images-thumbs&n=13/300/300" alt="Image">
+    <button>Нажми на меня</button>
+    <script>
+        const h1 = document.querySelector('h1');
+        const body = document.querySelector('body');
+        const button = document.querySelector('button');
+        const div = document.querySelector('#counter'); // Изменено на выбор по ID
+
+        // Инициализация счетчика
+        let count = 1;
+
+        // Функция для увеличения числа
+        function increment() {
+            count++; // Увеличиваем счетчик на 1
+            div.textContent = count; // Обновляем текст в div
+        }
+
+        // Стили для кнопки и заголовка
+        button.style.color = 'red';
+        button.style.background = 'black';
+        button.style.borderRadius = '15px';
+        h1.style.background = 'blue';
+        h1.style.margin = '0px';
+        body.style.margin = '0px';
+
+        // Добавляем обработчик события click на кнопку
+        button.addEventListener('click', increment);
+    </script>
+</body>
+</html>
