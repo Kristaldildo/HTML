@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Погода ФМ</title>
+    <style>
+        .container {
+            position: relative;
+            width: 375px;
+            height: 744px;
+            margin: 20px auto;
+            overflow: hidden;
+        }
+
+        .photo1 {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .photo2 {
+            position: absolute;
+            width: 100%;
+            height: 75%;
+            bottom: 0;
+            left: 0;
+            object-fit: cover;
+            filter: blur(10px);
+        }
+
+        .weather {
+            position: absolute;
+            width: 285px;
+            height: 261px;
+            top: 350px;
+            right: 40px;
+            z-index: 2;
+        }
+
+        .long {
+            position: absolute;
+            width: 285px;
+            height: 50px;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 660px;
+            border-bottom: 1px solid white;
+        }
+
+        .long2 {
+            position: absolute;
+            width: 119px;
+            height: 37px;
+            left: 77%;
+            transform: translateX(-50%);
+            top: 1px;
+            border-bottom: 1px solid white;
+        }
+
+        p {
+            position: absolute;
+            width: 110px;
+            height: 16px;
+            left: calc(50% - 110px/2 + 5.5px);
+            top: 250px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 16px;
+            z-index: 5;
+            color: #FFFFFF;
+        }
+
+        .Search {
+            position: absolute;
+            width: 114px;
+            height: 14px;
+            left: 229px;
+            top: 9px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 14px;
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .лупа {
+            position: absolute;
+            width: 12px;
+            height: 11px;
+            left: 335px;
+            top: 23px;
+        }
+
+        .number16 {
+            position: absolute;
+            width: 86px;
+            height: 55px;
+            left: 22px;
+            top: 135px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-style: normal;
+            font-size: 64px;
+            line-height: 75px;
+            letter-spacing: -0.08em;
+            color: #FFFFFF;
+        }
+
+        .london {
+            position: absolute;
+            width: 139px;
+            height: 40px;
+            left: 118px;
+            top: 149px;
+        }
+
+        .oblaco {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            left: 235px;
+            top: 149px;
+        }
+
+        .Velial-Squad {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            top: 13px;
+            left: 13px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img class="photo1" src="https://i.pinimg.com/550x/41/a7/f0/41a7f09424bcf7cd0df3d4a492b3116e.jpg" alt="Фон">
+        <p>Weather Details...</p>
+        <p class="Search">Search Location...</p>
+        <img class="лупа" src="images/fa_search.svg" alt="лупа">
+        <img class="weather" src="images/Frame 2 (1).svg" alt="Мое фото">
+        <img class="photo2" src="https://avatars.mds.yandex.net/i?id=115d38a1b480107f80cff1bf069c0d9b_sr-5103223-images-thumbs&n=13" alt="Наложение">
+        <img class="number16" src="images/16°.svg">
+        <img class="london" src="images/Group 3.svg">
+        <img class="oblaco" src="images/uiui/Cloudy.svg">
+        <img class="Velial-Squad" src="https://avatars.mds.yandex.net/i?id=ff40e975cbd8be6dc351a7dfa70ffb1d25c77be1-12620487-images-thumbs&n=13">
+        <div class="long"></div>
+        <div class="long2"></div>
+    </div>
+</body>
+</html>
